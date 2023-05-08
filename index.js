@@ -24,22 +24,12 @@ if(BMI <= 29.9){
  BMI_state = "above obesity"
 }
 
-if(age >= 19 && age <=24 && BMI >= 19 && BMI <=24 ) {
-  BMI_byAge = "you are Healthy"
-} else 
-if(age >= 25 && age <=34 && BMI >= 19 && BMI <=24 ) {
-  BMI_byAge = "you are Healthy"
-} else 
-if(age >= 35 && age <=44 && BMI >= 19 && BMI <=24 ) {
-  BMI_byAge = "you are Healthy"
-} else 
-if(age >= 45 && age <=54 && BMI >= 19 && BMI <=24 ) {
-  BMI_byAge = "you are Healthy"
-} else 
-if(age >= 55 && age <=64 && BMI >= 19 && BMI <=24 ) {
-  BMI_byAge = "you are Healthy"
-} else
-if(age >65 && BMI >= 24 && BMI <=29 ) {
+if(age >= 19 && age <=24 && BMI >= 19 && BMI <=24 ||
+   age >= 25 && age <=34 && BMI >= 19 && BMI <=24 ||
+    age >= 35 && age <=44 && BMI >= 19 && BMI <=24 ||
+     age >= 45 && age <=54 && BMI >= 19 && BMI <=24 ||
+      age >= 55 && age <=64 && BMI >= 19 && BMI <=24 ||
+       age >65 && BMI >= 24 && BMI <=29 ) {
   BMI_byAge = "you are Healthy"
 } else (
   BMI_byAge = "You are not Healthy"
