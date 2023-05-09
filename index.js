@@ -8,11 +8,12 @@ function calculateBMI() {
   console.table({ age, weight, height, male, female });
 
   // You are going to write the code here before the curly braces 👇🏻
-const BMI = (weight / (height * 2 /100));
+let BMI = (weight / (height * height /100));
 let BMI_state
 let BMI_byAge
+BMI = BMI.toFixed(1);
 
-if(BMI <= 18.5){
+if(BMI < 18.5){
   BMI_state = "under weight"
 } else
 if(BMI <= 24.9){
